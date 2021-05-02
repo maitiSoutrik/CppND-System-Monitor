@@ -99,6 +99,12 @@ int LinuxParser::RunningProcesses() { return 0; }
 // REMOVE: [[maybe_unused]] once you define the function
 string LinuxParser::Command(int pid[[maybe_unused]]) { return string(); }
 
+// Read and return the CPU usage of a process
+// return the values in seconds
+vector<float> LinuxParser::CpuUtilization(int pid){
+	vector<float> cpuValues{};
+  	return cpuValues;
+}
 // TODO: Read and return the memory used by a process
 // REMOVE: [[maybe_unused]] once you define the function
 string LinuxParser::Ram(int pid[[maybe_unused]]) { return string(); }

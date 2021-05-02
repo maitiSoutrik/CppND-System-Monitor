@@ -47,6 +47,9 @@ long ActiveJiffies(int pid);
 long IdleJiffies();
 
 // Processes
+// Read and return the CPU usage of a process
+// return in %
+std::vector<float> CpuUtilization(int pid);
 std::string Command(int pid);
 std::string Ram(int pid);
 std::string Uid(int pid);
