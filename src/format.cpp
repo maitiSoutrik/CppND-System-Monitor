@@ -8,7 +8,7 @@ using std::string;
 // INPUT: Long int measuring seconds
 // OUTPUT: HH:MM:SS
 // REMOVE: [[maybe_unused]] once you define the function
-string Format::ElapsedTime(long times) { 
+string Format::ElapsedTime(long int times) { 
   string time = "00:00:00";
   long cal = 0;
   if(times > 0){
@@ -26,7 +26,7 @@ string Format::ElapsedTime(long times) {
   return time;
 }
 
-string Format::TimeValueToString(long time){
+string Format::TimeValueToString(long int time){
 	if(time < 10) {return "0" + std::to_string(time);}
   	else {return std::to_string(time);}
   	return " ";
