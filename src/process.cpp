@@ -23,7 +23,7 @@ Process::Process(int pid) : processId_(pid){
 int Process::Pid() { return processId_; }
 
 // TODO: Return this process's CPU utilization
-float Process::CpuUtilization() { return cpuUsage_; }
+float Process::CpuUtilization() const{ return cpuUsage_; }
 
 // TODO: Return the command that generated this process
 string Process::Command() { return command_; }
